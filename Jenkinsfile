@@ -34,7 +34,7 @@ pipeline {
 	{
 		
 	steps {
-		sh 'scp /home/ec2-user/linuxagent/workspace/*.war -i -----BEGIN RSA PRIVATE KEY-----
+		sh 'scp /home/ec2-user/linuxagent/workspace/*.war -i
 MIIEpAIBAAKCAQEAzXaGMJbOuUpjo1tk/MkVwt0hK4XbcjMIejLdkD0sgzVuWRdd
 cA1zxf+3CPt3tdT3NiBaBk3l5sDFMA+SUq1kUuOuFWY4drxtIo9ZWkSvTqLgSLzF
 TH7dmAG+N57G1gF/qmOPEFmEycJz6rKG4y3n/+Nc+RTw1tJ3jT+GAtY9Jeok9kig
@@ -60,7 +60,7 @@ p9FXMqQv+g3kegjnB9Z+oLK6SKm/LN5etWlzhRjcOfOILL9uIx4pIWEdiSJOCIpu
 Bqun+wKBgQDpewke+HIvvUrDPjPWg4a6T05DLORNiv1HBomAJ1HTELxve/nOORYn
 o9mSUOpIHdUPiRJctWyTbYJ7/DiV7ts6FgTZLZsuO4+o13SYBaErdPLDgHtE9b4W
 vLjs1jTead9eCXKNtgT1QFA9ZhHeOajT6sABmklUiD1JuCPr+f8xLw==
------END RSA PRIVATE KEY----- ec2-user@52.64.89.226 /home/ec2-user /home/ec2-user/apache-tomcat-9.0.83/webapps   '
+ec2-user@52.64.89.226 /home/ec2-user /home/ec2-user/apache-tomcat-9.0.83/webapps   '
 	}
 	}
 	
