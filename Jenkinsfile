@@ -29,7 +29,7 @@ pipeline {
 				sh "mvn package"
 			}
 		}
-	}
+	
 	stage('----deploy-----')
 	{
 		
@@ -37,7 +37,7 @@ pipeline {
 		sh 'scp /home/ec2-user/linuxagent/workspace/techprimers.war -i tomcatslave.pem ec2-user@52.64.89.226:/home/ec2-user/apache-tomcat-9.0.83/webapps'
 	}
 	}
-	
+	}
 		
 	post {
 		success {
