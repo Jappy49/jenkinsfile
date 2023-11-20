@@ -1,15 +1,7 @@
 pipeline {
 	agent {  label 'linux agent' }
 	stages {
-		<!-- stage('---clean----'){
-			tools {
-				maven 'maven_3.9.5'
-			}
-			steps {
-				sh 'mvn --version'
-				sh "mvn clean"
-			}
-		} -->
+		
 		stage('---test---') {
 			tools {
 				maven 'maven_3.9.4'
