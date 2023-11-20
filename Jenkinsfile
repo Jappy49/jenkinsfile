@@ -34,7 +34,7 @@ pipeline {
 	{
 		
 	steps {
-		sh 'scp /home/ec2-user/linuxagent/workspace/*.war -i
+		sh 'scp /home/ec2-user/linuxagent/workspace/*.war 
 ec2-user@52.64.89.226 /home/ec2-user /home/ec2-user/apache-tomcat-9.0.83/webapps'
 	}
 	}
