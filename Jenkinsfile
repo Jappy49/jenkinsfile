@@ -35,6 +35,7 @@ pipeline {
 		
 	steps {
 		sh 'ssh ec2-user@54.66.52.52'
+		sh 'ssh -tt StrictHostKeyChecking=no user@54.66.52.52'
 		sh 'scp /home/ec2-user/linuxagent/workspace/techprimers.war -i tomcatslave.pem ec2-user@13.210.72.209:/home/ec2-user/apache-tomcat-9.0.83/webapps'
 	}
 	}
