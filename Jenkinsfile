@@ -34,7 +34,7 @@ pipeline {
 	{
 		
 	steps {
-		sh 'scp /home/ec2-user/linuxagent/workspace/techprimers.war -i tomcatslave.pem ec2-user@52.64.89.226:/home/ec2-user/apache-tomcat-9.0.83/webapps'
+		sh 'scp /home/ec2-user/linuxagent/workspace/techprimers.war -i tomcatslave.pem ec2-user@13.210.72.209:/home/ec2-user/apache-tomcat-9.0.83/webapps'
 	}
 	}
 	}
