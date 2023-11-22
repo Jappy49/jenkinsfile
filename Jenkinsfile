@@ -29,14 +29,17 @@ pipeline {
 				sh "mvn package"
 			}
 		}
+stage('---Archeive---')
+{
+archiveArtifacts artifacts: 'target/*.war'
+}
+
 	
 	stage('----deploy-----')
 	{
 		
-	steps {
-		
-		sh 'scp -rp /home/ec2-user/linuxnode/workspace/techprimers.war -i tomcatdeploy.pem ec2-user@3.104.35.6:/home/ec2-user/apache-tomcat-9.0.83/webapps'
-	}
+//deploy adapters: [tomcat9(credentialsId: 'deploy', path: '', url: 'http://3.104.35.6:8080/')], contextpath: null, war: 'target/*.war'
+	
 	}
 	}
 		
@@ -48,4 +51,4 @@ pipeline {
 			echo 'job was not build..it was failed'
 		}
 	}
-}
+} 
