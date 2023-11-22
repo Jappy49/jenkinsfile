@@ -1,5 +1,5 @@
 pipeline {
-	agent {  label 'linux agent' }
+	agent {  label 'linuxnode' }
 	stages {
 		stage('---clean----'){
 			tools {
