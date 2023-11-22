@@ -29,16 +29,17 @@ pipeline {
 				sh "mvn package"
 			}
 		}
-stage('---Archeive---')
+               stage('---Archeive---'){
 	{
             archiveArtifacts artifacts: 'target/*.war'
 
 	}
-	stage('----deploy-----')
+	       }
+	stage('----deploy-----'){
 	{
 		
            //deploy adapters: [tomcat9(credentialsId: 'deploy', path: '', url: 'http://3.104.35.6:8080/')], contextpath: null, war: 'target/*.war'
-	
+	}
 	
 	}
 	}
