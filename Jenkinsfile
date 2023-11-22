@@ -29,12 +29,12 @@ pipeline {
 				sh "mvn package"
 			}
 		}
-stage('---Archeive---')
+stage('---Archeive---'){
 {
 archiveArtifacts artifacts: 'target/*.war'
 }
 
-	
+}
 	stage('----deploy-----')
 	{
 		
