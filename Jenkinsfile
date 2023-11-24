@@ -32,7 +32,7 @@ pipeline {
 				success{
 					echo 'job was built successfully'
 			echo "Archeiving the artifacts"
-		archeiveArtifacts artifacts: '**/target/*.war'
+		archiveArtifacts artifacts: '**/target/*.war'
 				}
 				
 			}
